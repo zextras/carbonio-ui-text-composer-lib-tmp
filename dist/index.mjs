@@ -53246,7 +53246,7 @@ const LX = ({
   accountSettingsPrefs: Ee = {
     zimbraPrefLocale: "en",
     zimbraPrefHtmlEditorDefaultFontFamily: "Arial",
-    zimbraPrefHtmlEditorDefaultFontSize: "12pt",
+    zimbraPrefHtmlEditorDefaultFontSize: "16pt",
     zimbraPrefHtmlEditorDefaultFontColor: "#000000"
   },
   ...Bt
