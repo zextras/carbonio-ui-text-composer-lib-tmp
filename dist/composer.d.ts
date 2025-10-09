@@ -2,6 +2,11 @@ import { default as React } from 'react';
 import { IAllProps as EditorProps } from '@tinymce/tinymce-react';
 import { EditorOptions, TinyMCE } from 'tinymce/tinymce';
 import { AccountSettingsPrefs } from './editor-style-utils';
+declare global {
+    interface Window {
+        tinymce: TinyMCE;
+    }
+}
 type ComposerProps = Omit<EditorProps, 'onEditorChange'> & {
     /** The callback invoked when an edit is performed into the editor. `([text, html]) => {}` */
     onEditorChange?: (values: [string, string]) => void;
