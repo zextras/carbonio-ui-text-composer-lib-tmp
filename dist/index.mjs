@@ -53182,6 +53182,7 @@ function MX(vt) {
     customOptions: Zt
   } = vt, Fe = NX(Pt);
   return {
+    preview_styles: !1,
     content_css: [""],
     language_url: `tinymce/langs/${Ot}.js`,
     language: Ot,
