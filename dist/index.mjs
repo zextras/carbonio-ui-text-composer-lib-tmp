@@ -53161,7 +53161,20 @@ const EX = "8pt 9pt 10pt 11pt 12pt 13pt 14pt 16pt 18pt 24pt 30pt 36pt 48pt 60pt 
   }]
 }];
 function AX(xt) {
-  return xt ? !1 : ["fontfamily fontsize styles visualblocks", "bold italic underline strikethrough", "removeformat code", "alignleft aligncenter alignright alignjustify", "forecolor backcolor", "bullist numlist outdent indent", "ltr rtl", "link", "insertfile image", "imageSelector"].join(" | ");
+  return xt ? !1 : [
+    // Font and style controls
+    "fontfamily fontsize styles forecolor backcolor",
+    // Text formatting
+    "bold italic underline strikethrough removeformat",
+    // Alignment and direction
+    "alignleft aligncenter alignright alignjustify ltr rtl",
+    // Lists and indentation
+    "bullist numlist outdent indent",
+    // Insert elements
+    "link table insertfile image imageSelector",
+    // View and blocks
+    "visualblocks code"
+  ].join(" | ");
 }
 function OX(xt) {
   return {
