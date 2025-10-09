@@ -857,6 +857,12 @@ button::-moz-focus-inner {
 .tox[dir=rtl] .tox-swatches__picker-btn {
   margin-right: auto;
 }
+.tox .tox-swatch[aria-checked="false"] svg {
+  display: none;
+}
+.tox .tox-swatch[aria-checked="true"] svg {
+  display: block;
+}
 .tox .tox-comment-thread {
   background: #2b3b4e;
   position: relative;
